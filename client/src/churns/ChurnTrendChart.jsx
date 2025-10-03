@@ -9,7 +9,7 @@ function ChurnTrendChart() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('http://127.0.0.1:5000/api/churn_trends')
+    fetch('https://company-dashboard-lsr7.onrender.com/api/churn_trends')
       .then(response => response.json())
       .then(data => {
         setChartData({

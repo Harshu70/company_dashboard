@@ -23,7 +23,7 @@ function DataUploader() {
     formData.append('file', selectedFile);
 
     try {
-      const response = await fetch('http://127.0.0.1:5000/api/upload_data', {
+      const response = await fetch('https://company-dashboard-lsr7.onrender.com/api/upload_data', {
         method: 'POST',
         body: formData,
       });

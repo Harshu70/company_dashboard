@@ -10,7 +10,7 @@ function SalesKPIs() {
   
 
   useEffect(() => {
-    fetch("http://127.0.0.1:5000/api/sales_kpis")
+    fetch("https://company-dashboard-lsr7.onrender.com/api/sales_kpis")
       .then((res) => res.json())
       .then((data) => {
         setKpis(data);
@@ -22,7 +22,7 @@ function SalesKPIs() {
       });
   }, []);
   useEffect(() => {
-      fetch("http://127.0.0.1:5000/api/db_stats")
+      fetch("https://company-dashboard-lsr7.onrender.com/api/db_stats")
         .then((response) => response.json())
         .then((data) => {
           setTotalEntries(data.total_entries ?? 0);

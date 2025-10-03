@@ -13,7 +13,7 @@ function SalesForecastChart() {
   useEffect(() => {
     setLoading(true);
     // The fetch URL is now dynamic based on the forecastDays state
-    fetch(`http://127.0.0.1:5000/api/full_sales_view?days=${forecastDays}`)
+    fetch(`https://company-dashboard-lsr7.onrender.com/api/full_sales_view?days=${forecastDays}`)
       .then(response => response.json())
       .then(data => {
         const allLabels = [...data.historical_dates, ...data.forecast_dates];

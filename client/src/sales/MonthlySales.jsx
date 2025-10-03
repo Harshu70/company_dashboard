@@ -29,8 +29,8 @@ function SalesChartToggle() {
   useEffect(() => {
     const endpoint =
       view === "monthly"
-        ? "http://127.0.0.1:5000/api/monthly_sales"
-        : "http://127.0.0.1:5000/api/yearly_sales";
+        ? "https://company-dashboard-lsr7.onrender.com/api/monthly_sales"
+        : "https://company-dashboard-lsr7.onrender.com/api/yearly_sales";
 
     setLoading(true);
     fetch(endpoint)

@@ -5,7 +5,7 @@ function DemandForecast() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('http://127.0.0.1:5000/api/product_demand_forecast')
+    fetch('https://company-dashboard-lsr7.onrender.com/api/product_demand_forecast')
       .then(response => response.json())
       .then(data => {
         // Check if the backend returned an error

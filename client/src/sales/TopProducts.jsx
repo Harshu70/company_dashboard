@@ -5,7 +5,7 @@ function TopProducts() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('http://127.0.0.1:5000/api/top_products')
+    fetch('https://company-dashboard-lsr7.onrender.com/api/top_products')
       .then(response => response.json())
       .then(data => {
         setProducts(data);

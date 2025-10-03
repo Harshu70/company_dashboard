@@ -7,7 +7,7 @@ function ChurnPrediction() {
 
   useEffect(() => {
     setLoading(true);
-    fetch(`http://127.0.0.1:5000/api/predict_churn?count=${count}`)
+    fetch(`https://company-dashboard-lsr7.onrender.com/api/predict_churn?count=${count}`)
       .then(response => response.json())
       .then(data => {
         setChurners(data);

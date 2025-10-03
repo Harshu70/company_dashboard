@@ -11,7 +11,7 @@ function ChurnSegment() {
   const [segmentData, setSegmentData] = useState(null);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:5000/api/churn_segmentation")
+    fetch("https://company-dashboard-lsr7.onrender.com/api/churn_segmentation")
       .then((response) => response.json())
       .then((data) => {
         setSegmentData(data); // Store raw data

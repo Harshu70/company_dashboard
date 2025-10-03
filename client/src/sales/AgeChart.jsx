@@ -14,7 +14,7 @@ function SalesByAgeGroup() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:5000/api/sales_by_age") 
+    fetch("https://company-dashboard-lsr7.onrender.com/api/sales_by_age") 
       .then((response) => response.json())
       .then((data) => {
         setSalesData(data);

@@ -6,7 +6,7 @@ function GeoChart() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('http://127.0.0.1:5000/api/user_distribution')
+    fetch('https://company-dashboard-lsr7.onrender.com/api/user_distribution')
       .then(res => res.json())
       .then(data => {
         // Format the data for the GeoChart
